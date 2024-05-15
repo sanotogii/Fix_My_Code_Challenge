@@ -5,18 +5,18 @@
 class Square:
     """square class"""
 
-    def __init__(self, *args, **kwargs):
-        """ init """
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+    def __init__(self, width, height):
+        """ init the class"""
+        self.width = width
+        self.height = height
 
     def Area_of_my_square(self):
         """ Area of the square """
-        return self.height * self.width
+        return self.width * self.width 
 
     def Permiter_Of_My_Square(self):
         """ Perimeter of the square """
-        return (self.width * 2) + (self.height * 2)
+        return self.width * 4
 
     def __str__(self):
         """ str """
