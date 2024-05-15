@@ -1,54 +1,25 @@
 #!/usr/bin/python3
-"""
-square
-"""
+""" square class """
 
 
 class Square:
-    """
-    Represents a square shape.
+    """square class"""
 
-    Attributes:
-        width (int): The width of the square.
-        height (int): The height of the square.
-    """
     def __init__(self, width=0, height=0):
-        """
-        Initializes a square with the given width and height.
-
-        Args:
-            width (int): The width of the square. Default is 0.
-            height (int): The height of the square. Default is 0.
-        """
+        """ init the class"""
         self.width = width
         self.height = height
 
     def Area_of_my_square(self):
-        """
-        Calculates the area of the square.
-
-        Returns:
-            int: The area of the square.
-        """
-        return self.width * self.width
+        """ Area of the square """
+        return self.width * self.width 
 
     def Permiter_Of_My_Square(self):
-        """
-        Calculates the perimeter of the square.
-
-        Returns:
-            int: The perimeter of the square.
-        """
+        """ Perimeter of the square """
         return self.width * 4
 
     def __str__(self):
-        """
-        Returns a string representation of the square.
-
-        Returns:
-            str: String representation of the square in the format:
-            'width/height'.
-        """
+        """ str """
         return "{}/{}".format(self.width, self.height)
 
 
